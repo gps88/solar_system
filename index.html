@@ -48,13 +48,15 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collection <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-li"><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li class="dropdown-li"><a href="collection.html">Full collection</a></li>
+                    <li><a href="collection.html#featured">Featured</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-header">Categories</li>
+                    <li><a href="collection.html#dresses">Dresses</a></li>
+                    <li><a href="collection.html#clothing">Assorted Clothing</a></li>
+                    <li><a href="collection.html#shoes">Shoes</a></li>
+                    <li><a href="collection.html#wallets">Wallets and Leather Goods</a></li>
+                    <li><a href="collection.html#furniture">Furniture</a></li>
                   </ul>
                 </li>
               </ul>
@@ -202,7 +204,7 @@
         <div class="container">
           <div class="mx-auto browse">
             <br>
-            <p ><a class="btn btn-lg btn-warning" href="#" role="button">Browse collection</a></p>
+            <p ><a class="btn btn-lg btn-warning" href="collection.html" role="button">Browse collection</a></p>
           </div> 
         </div>
         
@@ -252,49 +254,60 @@
       
       <!-- Hours
     ================================================== -->      
-    <div class="container">
-      <a class="linkheader" id="hours"><h1 class="page-header" style="padding-top: 70px; margin-top: -70px;">Hours <h3 class="text-muted">April business hours</h3></h1></a>
-      <ul class="list-group">
-        <li class="list-group-item"><strong>Monday:</strong>&nbsp;Closed</li>
-        <li class="list-group-item"><strong>Tuesday:</strong>&nbsp;11 AM - 3 PM</li>
-        <li class="list-group-item"><strong>Wednesday:</strong>&nbsp;11 AM - 3 PM</li>
-        <li class="list-group-item"><strong>Thursday:</strong>&nbsp;11 AM - 3 PM</li>
-        <li class="list-group-item"><strong>Friday:</strong>&nbsp;11 AM - 6 PM</li>
-        <li class="list-group-item"><strong>Saturday:</strong>&nbsp;11 AM - 6 PM</li>
-      </ul>
-      
-
-    </div>
+    <a class="linkheader" id="hours"><h1 class="page-header" style="padding-top: 70px; margin-top: -70px;">Hours <h3 class="text-muted">April business hours</h3></h1></a>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Monday:</strong>&nbsp;Closed</li>
+      <li class="list-group-item"><strong>Tuesday:</strong>&nbsp;11 AM - 3 PM</li>
+      <li class="list-group-item"><strong>Wednesday:</strong>&nbsp;11 AM - 3 PM</li>
+      <li class="list-group-item"><strong>Thursday:</strong>&nbsp;11 AM - 3 PM</li>
+      <li class="list-group-item"><strong>Friday:</strong>&nbsp;11 AM - 6 PM</li>
+      <li class="list-group-item"><strong>Saturday:</strong>&nbsp;11 AM - 6 PM</li>
+    </ul>
       
       <!-- Contact
-    ================================================== -->      
-    <div class="container">
-      <a class="linkheader" id="contact"><h1 class="page-header" style="padding-top: 70px; margin-top: -70px;">Contact Us</h1></a>
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2><strong>681 Falmouth Rd, Unit A-12</strong></h2>
-          <h3>Mashpee, MA 02649</h3>
-          <br>
-          <ul class="list-unstyled">
-            <li><p class="lead">(508) 340-1068</p></li>
-            <li><p class="lead"><a href="mailto:Encore9703image@gmail.com">Encore9703image@gmail.com</a></p></li>
-            <li><p class="lead"><a href="https://www.facebook.com/encore9703">Find us on Facebook</a></p></li>
-          </ul>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="images/women4.jpg" alt="Generic placeholder image">
-        </div>
+    ================================================== -->     
+    <a class="linkheader" id="contact"><h1 class="page-header" style="padding-top: 70px; margin-top: -70px;">Contact Us</h1></a>
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2><strong>681 Falmouth Rd, Unit A-12</strong></h2>
+        <h3>Mashpee, MA 02649</h3>
+        <br>
+        <ul class="list-unstyled">
+          <li><p class="lead">(508) 340-1068</p></li>
+          <li><p class="lead"><a href="mailto:Encore9703image@gmail.com">Encore9703image@gmail.com</a></p></li>
+          <li><p class="lead"><a href="https://www.facebook.com/encore9703">Find us on Facebook</a></p></li>
+        </ul>
       </div>
-      
-      <hr class="featurette-divider">
-
+      <div class="col-md-5 col-md-pull-7">
+        <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var mapDiv = document.getElementById('map');
+                            var map = new google.maps.Map(mapDiv, {
+                                center: {lat: 41.610557, lng: -70.491626},
+                                zoom: 15
+                            });
+                            var marker = new google.maps.Marker({
+                              position: {lat: 41.610557, lng: -70.491626},
+                              map: map,
+                              title: 'Encore9703'
+                            });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAukm26NTSKbmq87Q3zEGnxbpoFPi-7ek8&callback=initMap">
+                    </script>
+        <!--<img class="featurette-image img-responsive center-block" src="images/women4.jpg" alt="Generic placeholder image">-->
+      </div>
     </div>
+
+    <hr class="featurette-divider">
 
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Encore 9703, Inc. &middot; Website created by <a href="#">Gregory Pickart</a></p>
+        <p>&copy; 2017 Encore 9703, Inc. &middot; Website created by <a href="http://gregpickart.xyz">Gregory Pickart</a> &middot; <a href="collection.html">View Collection</a></p>
       </footer>
 
     </div><!-- /.container -->
