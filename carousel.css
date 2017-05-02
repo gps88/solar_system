@@ -33,18 +33,18 @@ body {
   width: auto;
 }
 
-.bg-inverse {
+/* .bg-inverse {
   background: rgba(0,0,0,0);
-}
+}*/
 
-.navbar-static-top {
+/* .navbar-static-top {
   border: none;
-}
+}*/
 
-.navbar-default .navbar-collapse, .navbar-inverse .navbar-form {
+/*.navbar-default .navbar-collapse, .navbar-inverse .navbar-form {
   border-color: rgba(0,0,0,0);
-}
-.nav.navbar-nav li a {
+}*/
+/* .nav.navbar-nav li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 115%;
@@ -59,6 +59,17 @@ body {
 .nav.navbar-nav li a:active {
         color: #ffc631 !important;
 }
+
+.dropdown-li li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 115%;
+  color: #000 !important;
+  -moz-transition: color .2s;
+  -webkit-transition: color .2s;
+  -ms-transition: color .2s;
+  transition: color .2s;
+}*/
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -84,7 +95,6 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  filter: brightness(50%);
 }
 
 .jumbotron {
@@ -104,19 +114,41 @@ body {
 }
 
 .navbar-brand img {
-  height: 55px;
-  width: 55px;
+  height: 100%;
 }
 
-.btn-outline-primary {
-  color: #ffc631;
-  border-color: #ffc631;
+.text-muted {
+  color: #b18000;
 }
 
-.btn-primary {
-  background: #ffc631;
+.browse {
+  display: block; 
+  width: 175px;
+  margin: auto;
 }
 
+a.linkheader {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.list-unstyled a,
+footer a {
+  text-decoration: none;
+  color: #b18000;
+  -moz-transition: color .2s;
+  -webkit-transition: color .2s;
+  -ms-transition: color .2s;
+  transition: color .2s;
+}
+
+.list-unstyled a:active,
+.list-unstyled a:hover,
+footer a:active,
+footer a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
