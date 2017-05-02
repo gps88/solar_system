@@ -66,6 +66,13 @@ body {
 
 }
 
+.jumbotron.collection {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/Collection/IMG_3408.JPG) no-repeat center center;
+  background-size: cover;
+
+}
+
 .jumbotron h1 {
   margin-top: 250px;
   color: white;
