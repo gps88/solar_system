@@ -33,44 +33,6 @@ body {
   width: auto;
 }
 
-/* .bg-inverse {
-  background: rgba(0,0,0,0);
-}*/
-
-/* .navbar-static-top {
-  border: none;
-}*/
-
-/*.navbar-default .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: rgba(0,0,0,0);
-}*/
-/* .nav.navbar-nav li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 115%;
-  color: #fff !important;
-  -moz-transition: color .2s;
-  -webkit-transition: color .2s;
-  -ms-transition: color .2s;
-  transition: color .2s;
-}
-
-.nav.navbar-nav li a:hover,
-.nav.navbar-nav li a:active {
-        color: #ffc631 !important;
-}
-
-.dropdown-li li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 115%;
-  color: #000 !important;
-  -moz-transition: color .2s;
-  -webkit-transition: color .2s;
-  -ms-transition: color .2s;
-  transition: color .2s;
-}*/
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
