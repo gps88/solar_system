@@ -1,0 +1,28 @@
+/* THE TEAM */
+
+Designer and developer: Greg Pickart
+Location: Medford, MA USA.
+
+
+/* ATTRIBUTION */
+
+Name: NASA
+The wonderful images used throughout the website
+
+
+/* THE SITE */
+
+Last update:
+4/24/2017
+
+Standards:
+HTML5, CSS3
+
+Components:
+JQuery
+Babylon.js (http://www.babylonjs.com/)
+fullPage.js (http://alvarotrigo.com/fullPage/)
+ScrollReveal (https://scrollrevealjs.org)
+
+Software:
+Brackets (http://brackets.io/)
